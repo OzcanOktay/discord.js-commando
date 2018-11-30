@@ -97,7 +97,7 @@ module.exports = class HelpCommand extends Command {
 				.setFooter('© ' + (new Date()).getFullYear() + ' Sohbet ve Oyun', this.client.user.avatarURL);
 				
 				groups.forEach(group =>
-                    			helpbed.setDescription(`**${group.name}**` \n
+                    			helpbed.setDescription(`**${group.name}**`
                         			group.commands
                             				.map(command => `**${command.name}**: ${command.description}`)
                             					.join('\n')));
